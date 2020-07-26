@@ -10,3 +10,16 @@ names(data)=c('Class','Alcohol','Malic acid','Ash','Alcalinity of ash','Magnesiu
 
 data
 
+library(dplyr)
+library(datasets)
+
+data %>% filter(data$Class==1)
+
+
+data %>% filter(data$Class==2)
+
+
+data %>% filter(data$Class==3)
+
+
+
