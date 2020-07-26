@@ -26,11 +26,7 @@ hist(fc1$Magnesium)
 hist(fc1$`Total phenols`)
 hist(fc1$Flavanoids)
 hist(fc1$`Nonflavanoid phenols`)
-hist(fc1$Proanthocyanins)
-hist(fc1$`Color intensity`)
-hist(fc1$Hue)
-hist(fc1$`OD280/OD315`)
-hist(fc1$Proline)
+
 
 #HISTOGRAMA DE FILTRADO DE CLASE 2
 hist(fc2$Alcohol)
@@ -41,11 +37,6 @@ hist(fc2$Magnesium)
 hist(fc2$`Total phenols`)
 hist(fc2$Flavanoids)
 hist(fc2$`Nonflavanoid phenols`)
-hist(fc2$Proanthocyanins)
-hist(fc2$`Color intensity`)
-hist(fc2$Hue)
-hist(fc2$`OD280/OD315`)
-hist(fc2$Proline)
 
 #HISTOGREAMA DE FILTRADO DE CLASE 3
 hist(fc3$Alcohol)
@@ -56,11 +47,7 @@ hist(fc3$Magnesium)
 hist(fc3$`Total phenols`)
 hist(fc3$Flavanoids)
 hist(fc3$`Nonflavanoid phenols`)
-hist(fc3$Proanthocyanins)
-hist(fc3$`Color intensity`)
-hist(fc3$Hue)
-hist(fc3$`OD280/OD315`)
-hist(fc3$Proline)
+
 
 
 #DIAGRAMA DE CAJAS (CADA VARIABLE CUANTITATIVA VS VARIABLE CUALITATIVA)
@@ -75,11 +62,7 @@ boxplot(fc1$Magnesium~fc1$Class,horizontal = TRUE)
 boxplot(fc1$`Total phenols`~fc1$Class,horizontal = TRUE)
 boxplot(fc1$Flavanoids~fc1$Class,horizontal = TRUE)
 boxplot(fc1$`Nonflavanoid phenols`~fc1$Class,horizontal = TRUE)
-boxplot(fc1$Proanthocyanins~fc1$Class,horizontal = TRUE)
-boxplot(fc1$`Color intensity`~fc1$Class,horizontal = TRUE)
-boxplot(fc1$Hue~fc1$Class,horizontal = TRUE)
-boxplot(fc1$`OD280/OD315`~fc1$Class,horizontal = TRUE)
-boxplot(fc1$Proline~fc1$Class,horizontal = TRUE)
+
 
 #DIAGRAMA DE CAJAS FILTRADAS CON CLASE 2
 boxplot(fc2$Alcohol~fc2$Class,horizontal = TRUE)
@@ -90,11 +73,7 @@ boxplot(fc2$Magnesium~fc2$Class,horizontal = TRUE)
 boxplot(fc2$`Total phenols`~fc2$Class,horizontal = TRUE)
 boxplot(fc2$Flavanoids~fc2$Class,horizontal = TRUE)
 boxplot(fc2$`Nonflavanoid phenols`~fc2$Class,horizontal = TRUE)
-boxplot(fc2$Proanthocyanins~fc2$Class,horizontal = TRUE)
-boxplot(fc2$`Color intensity`~fc2$Class,horizontal = TRUE)
-boxplot(fc2$Hue~fc2$Class,horizontal = TRUE)
-boxplot(fc2$`OD280/OD315`~fc2$Class,horizontal = TRUE)
-boxplot(fc2$Proline~fc2$Class,horizontal = TRUE)
+
 
 #DIAGRAMA DE CAJAS FILTRADAS CON CLASE 3
 boxplot(fc3$Alcohol~fc3$Class,horizontal = TRUE)
@@ -105,11 +84,7 @@ boxplot(fc3$Magnesium~fc3$Class,horizontal = TRUE)
 boxplot(fc3$`Total phenols`~fc3$Class,horizontal = TRUE)
 boxplot(fc3$Flavanoids~fc3$Class,horizontal = TRUE)
 boxplot(fc3$`Nonflavanoid phenols`~fc3$Class,horizontal = TRUE)
-boxplot(fc3$Proanthocyanins~fc3$Class,horizontal = TRUE)
-boxplot(fc3$`Color intensity`~fc3$Class,horizontal = TRUE)
-boxplot(fc3$Hue~fc3$Class,horizontal = TRUE)
-boxplot(fc3$`OD280/OD315`~fc3$Class,horizontal = TRUE)
-boxplot(fc3$Proline~fc3$Class,horizontal = TRUE)
+
 
 #MEDIDAS ESTADISTICAS (CADA VARIABLE CUANTITATIVA)
 #MEDIDAS FILTRADAS POR CLASE 1
@@ -137,20 +112,6 @@ sd(fc1$Flavanoids)
 summary(fc1$`Nonflavanoid phenols`)
 sd(fc1$`Nonflavanoid phenols`)
 
-summary(fc1$Proanthocyanins)
-sd(fc1$Proanthocyanins)
-
-summary(fc1$`Color intensity`)
-sd(fc1$`Color intensity`)
-
-summary(fc1$Hue)
-sd(fc1$Hue)
-
-summary(fc1$`OD280/OD315`)
-sd(fc1$`OD280/OD315`)
-
-summary(fc1$Proline)
-sd(fc1$Proline)
 
 #MEDIDAS FILTRADAS POR CLASE 2
 summary(fc2$Alcohol)
@@ -177,20 +138,6 @@ sd(fc2$Flavanoids)
 summary(fc2$`Nonflavanoid phenols`)
 sd(fc2$`Nonflavanoid phenols`)
 
-summary(fc2$Proanthocyanins)
-sd(fc2$Proanthocyanins)
-
-summary(fc2$`Color intensity`)
-sd(fc2$`Color intensity`)
-
-summary(fc2$Hue)
-sd(fc2$Hue)
-
-summary(fc2$`OD280/OD315`)
-sd(fc2$`OD280/OD315`)
-
-summary(fc2$Proline)
-sd(fc2$Proline)
 
 #MEDIDAS FILTRADAS POR CLASE 3
 summary(fc3$Alcohol)
@@ -217,20 +164,6 @@ sd(fc3$Flavanoids)
 summary(fc3$`Nonflavanoid phenols`)
 sd(fc3$`Nonflavanoid phenols`)
 
-summary(fc3$Proanthocyanins)
-sd(fc3$Proanthocyanins)
-
-summary(fc3$`Color intensity`)
-sd(fc3$`Color intensity`)
-
-summary(fc3$Hue)
-sd(fc3$Hue)
-
-summary(fc3$`OD280/OD315`)
-sd(fc3$`OD280/OD315`)
-
-summary(fc3$Proline)
-sd(fc3$Proline)
 
 #DIAGRAMAS DE FRECUENCIAS (VARIABLES CUALITITATIVAS)
 tablaFrecuencia=fdt(data$Class)
@@ -247,49 +180,44 @@ diagramaBarras
 
 library(corrplot)
 library(ggplot2)
-#matriz correlacion vino clase 1
 
+
+#MATRIZ DE CORRELACION VINO CLASE 1
 #fc1$Class=NULL
 fc1.cor<-cor(fc1,method="pearson")
 round(fc1.cor,digits=2)
 corrplot(fc1.cor)
-#matriz correlacion vino clase 2
+
+#MATRIZ DE CORRELACION VINO CLASE 2
 #fc2$Class=NULL
 fc2.cor<-cor(fc2,method="pearson")
 round(fc2.cor,digits=2)
 
 
-#matriz correlacion vino clase 3
+#MATRIZ DE CORRELACION VINO CLASE 3
 #fc3$Class=NULL
 fc3.cor<-cor(fc3,method="pearson")
 round(fc3.cor,digits=2)
 
 
-#matriz de grafico de dispersion vino clase 1
-
+#MATRIZ DE GRAFICO DE DISPERSION VINO CLASE 1
 plot(fc1[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 #plot(fc1[,c(1,2,3,4)])
 
-
-#matriz de grafico de dispersion vino clase 2
-
+#MATRIZ DE GRAFICO DE DISEPERSION VINO CLASE 2
 plot(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 
-#matriz de grafico de dispersion vino clase 3
-
+#MATRIZ DE GRAFICO DE DISPERSION VINO CLASE 3
 plot(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 
 
-#matriz de varianza y correlacion vino clase 1
-
+#MATRIZ DE VARIANZA Y CORRELACION VINO CLASE 1
 cov(fc1[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 
-#matriz de varianza y correlacion vino clase 2
-
+#MATRIZ DE VARIANZA Y CORRELACION VINO CLASE 2
 cov(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 
-
-#matriz de varianza y correlacion vino clase 3
+##MATRIZ DE VARIANZA Y CORRELACION VINO CLASE 3
 cov(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 
 
