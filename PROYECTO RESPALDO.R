@@ -243,6 +243,55 @@ diagramaBarras
 #PARTE 2........................................................................
 
 
+library(corrplot)
+library(ggplot2)
+#matriz correlacion vino clase 1
+
+#fc1$Class=NULL
+fc1.cor<-cor(fc1,method="pearson")
+round(fc1.cor,digits=2)
+
+
+
+corrplot(fc1.cor)
+#matriz correlacion vino clase 2
+#fc2$Class=NULL
+fc2.cor<-cor(fc2,method="pearson")
+round(fc2.cor,digits=2)
+
+
+#matriz correlacion vino clase 3
+#fc3$Class=NULL
+fc3.cor<-cor(fc3,method="pearson")
+round(fc3.cor,digits=2)
+
+
+#matriz de grafico de dispersion vino clase 1
+
+plot(fc1[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+#plot(fc1[,c(1,2,3,4)])
+
+
+#matriz de grafico de dispersion vino clase 2
+
+plot(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+#matriz de grafico de dispersion vino clase 3
+
+plot(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+
+#matriz de varianza y correlacion vino clase 1
+
+cov(fc1[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+#matriz de varianza y correlacion vino clase 2
+
+cov(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+
+#matriz de varianza y correlacion vino clase 3
+cov(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 
 
 
