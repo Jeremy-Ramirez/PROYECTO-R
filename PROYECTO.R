@@ -243,11 +243,26 @@ diagramaBarras
 
 
 
+library(corrplot)
+library(ggplot2)
+#matriz correlacion vino clase 1
+
+fc1$Class=NULL
+fc1.cor<-cor(fc1,method="pearson")
+round(fc1.cor,digits=2)
 
 
 
+corrplot(fc1.cor)
+#matriz correlacion vino clase 2
+fc2$Class=NULL
+fc2.cor<-cor(fc2,method="pearson")
+round(fc2.cor,digits=2)
 
 
-
+#matriz correlacion vino clase 3
+fc3$Class=NULL
+fc3.cor<-cor(fc3,method="pearson")
+round(fc3.cor,digits=2)
 
 
