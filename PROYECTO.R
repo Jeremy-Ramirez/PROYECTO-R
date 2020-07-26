@@ -281,3 +281,17 @@ plot(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 plot(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
 
 
+#matriz de varianza y correlacion vino clase 1
+
+cov(fc1[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+#matriz de varianza y correlacion vino clase 2
+
+cov(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+
+#matriz de varianza y correlacion vino clase 3
+cov(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+
+
