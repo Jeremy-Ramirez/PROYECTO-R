@@ -18,35 +18,37 @@ fc3=data %>% filter(data$Class==3)
 #HISTOGRAMA DE VARIABLES CUANTITATIVAS
 
 #HISTOGRAMAS DE FILTRADO DE CLASE1
-hist(fc1$Alcohol)
-hist(fc1$`Malic acid`)
-hist(fc1$Ash)
-hist(fc1$`Alcalinity of ash`)
-hist(fc1$Magnesium)
-hist(fc1$`Total phenols`)
-hist(fc1$Flavanoids)
-hist(fc1$`Nonflavanoid phenols`)
+
+
+hist(fc1$Alcohol,xlab ="Alcohol",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc1$`Malic acid`,xlab ="Ácido Málico",ylab="Frecuencia" ,main="Histograma",col=c("blue"))
+hist(fc1$Ash,xlab ="Cenizas",ylab="Frecuencia" ,main="Histograma",col=c("blue"))
+hist(fc1$`Alcalinity of ash`,xlab ="Alcalinidad de cenizas",ylab="Frecuencia",main="Histograma" ,col=c("blue"))
+hist(fc1$Magnesium,xlab ="Magnesio",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
+hist(fc1$`Total phenols`,xlab ="Fenoles totales",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
+hist(fc1$Flavanoids,xlab ="Flavonoides",ylab="Frecuencia",main="Histograma" ,col=c("gold"))
+hist(fc1$`Nonflavanoid phenols`,xlab ="Fenoles no flavonoides",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
 
 
 #HISTOGRAMA DE FILTRADO DE CLASE 2
-hist(fc2$Alcohol)
-hist(fc2$`Malic acid`)
-hist(fc2$Ash)
-hist(fc2$`Alcalinity of ash`)
-hist(fc2$Magnesium)
-hist(fc2$`Total phenols`)
-hist(fc2$Flavanoids)
-hist(fc2$`Nonflavanoid phenols`)
+hist(fc2$Alcohol,xlab ="Alcohol",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc2$`Malic acid`,xlab ="Ácido Málico",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc2$Ash,xlab ="Cenizas",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc2$`Alcalinity of ash`,xlab ="Alcalinidad de cenizas",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc2$Magnesium,xlab ="Magnesio",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
+hist(fc2$`Total phenols`,xlab ="Fenoles totales",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
+hist(fc2$Flavanoids,xlab ="Flavonoides",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
+hist(fc2$`Nonflavanoid phenols`,xlab ="Fenoles no flavonoides",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
 
 #HISTOGREAMA DE FILTRADO DE CLASE 3
-hist(fc3$Alcohol)
-hist(fc3$`Malic acid`)
-hist(fc3$Ash)
-hist(fc3$`Alcalinity of ash`)
-hist(fc3$Magnesium)
-hist(fc3$`Total phenols`)
-hist(fc3$Flavanoids)
-hist(fc3$`Nonflavanoid phenols`)
+hist(fc3$Alcohol,xlab ="Alcohol",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc3$`Malic acid`,xlab ="Ácido Málico",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc3$Ash,xlab ="Cenizas",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc3$`Alcalinity of ash`,xlab ="Alcalinidad de cenizas",ylab="Frecuencia",main="Histograma",col=c("blue"))
+hist(fc3$Magnesium,xlab ="Magnesio",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
+hist(fc3$`Total phenols`,xlab ="Fenoles totales",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
+hist(fc3$Flavanoids,xlab ="Flavonoides",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
+hist(fc3$`Nonflavanoid phenols`,xlab ="Fenoles no flavonoides",ylab="Frecuencia" ,main="Histograma",col=c("gold"))
 
 
 
@@ -54,36 +56,36 @@ hist(fc3$`Nonflavanoid phenols`)
 #DIAGRAMA DE CAJAS FILTRADAS CON CLASE 1
 
 
-boxplot(fc1$Alcohol~fc1$Class,horizontal = TRUE,xlab = "Alcohol",ylab="Vino clase 1",main="Diagrama de cajas",col=c(123))
-boxplot(fc1$`Malic acid`~fc1$Class,horizontal = TRUE)
-boxplot(fc1$Ash~fc1$Class,horizontal = TRUE)
-boxplot(fc1$`Alcalinity of ash`~fc1$Class,horizontal = TRUE)
-boxplot(fc1$Magnesium~fc1$Class,horizontal = TRUE)
-boxplot(fc1$`Total phenols`~fc1$Class,horizontal = TRUE)
-boxplot(fc1$Flavanoids~fc1$Class,horizontal = TRUE)
-boxplot(fc1$`Nonflavanoid phenols`~fc1$Class,horizontal = TRUE)
+boxplot(fc1$Alcohol~fc1$Class,horizontal = TRUE,xlab = "Alcohol",ylab="Vino clase 1",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc1$`Malic acid`~fc1$Class,horizontal = TRUE,xlab = "Ácido Málico",ylab="Vino clase 1",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc1$Ash~fc1$Class,horizontal = TRUE,xlab = "Cenizas",ylab="Vino clase 1",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc1$`Alcalinity of ash`~fc1$Class,horizontal = TRUE,xlab = "Alcalinidad Cenizas",ylab="Vino clase 1",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc1$Magnesium~fc1$Class,horizontal = TRUE,xlab = "Magnesio",ylab="Vino clase 1",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc1$`Total phenols`~fc1$Class,horizontal = TRUE,xlab = "Fenoles totales",ylab="Vino clase 1",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc1$Flavanoids~fc1$Class,horizontal = TRUE,xlab = "Flavonoides",ylab="Vino clase 1",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc1$`Nonflavanoid phenols`~fc1$Class,horizontal = TRUE,xlab = "Fenoles no flavonoides",ylab="Vino clase 1",main="Diagrama de cajas",col=c("gold"))
 
 
 #DIAGRAMA DE CAJAS FILTRADAS CON CLASE 2
-boxplot(fc2$Alcohol~fc2$Class,horizontal = TRUE)
-boxplot(fc2$`Malic acid`~fc2$Class,horizontal = TRUE)
-boxplot(fc2$Ash~fc2$Class,horizontal = TRUE)
-boxplot(fc2$`Alcalinity of ash`~fc2$Class,horizontal = TRUE)
-boxplot(fc2$Magnesium~fc2$Class,horizontal = TRUE)
-boxplot(fc2$`Total phenols`~fc2$Class,horizontal = TRUE)
-boxplot(fc2$Flavanoids~fc2$Class,horizontal = TRUE)
-boxplot(fc2$`Nonflavanoid phenols`~fc2$Class,horizontal = TRUE)
+boxplot(fc2$Alcohol~fc2$Class,horizontal = TRUE,xlab = "Alcohol",ylab="Vino clase 2",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc2$`Malic acid`~fc2$Class,horizontal = TRUE,xlab = "Ácido Málico",ylab="Vino clase 2",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc2$Ash~fc2$Class,horizontal = TRUE,xlab = "Cenizas",ylab="Vino clase 2",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc2$`Alcalinity of ash`~fc2$Class,horizontal = TRUE,xlab = "Alcalinidad de cenizas",ylab="Vino clase 2",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc2$Magnesium~fc2$Class,horizontal = TRUE,xlab = "Magnesio",ylab="Vino clase 2",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc2$`Total phenols`~fc2$Class,horizontal = TRUE,xlab = "Fenoles totales",ylab="Vino clase 2",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc2$Flavanoids~fc2$Class,horizontal = TRUE,xlab = "Flavonoides",ylab="Vino clase 2",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc2$`Nonflavanoid phenols`~fc2$Class,horizontal = TRUE,xlab = "Fenoles no flavonoides",ylab="Vino clase 2",main="Diagrama de cajas",col=c("gold"))
 
 
 #DIAGRAMA DE CAJAS FILTRADAS CON CLASE 3
-boxplot(fc3$Alcohol~fc3$Class,horizontal = TRUE)
-boxplot(fc3$`Malic acid`~fc3$Class,horizontal = TRUE)
-boxplot(fc3$Ash~fc3$Class,horizontal = TRUE)
-boxplot(fc3$`Alcalinity of ash`~fc3$Class,horizontal = TRUE)
-boxplot(fc3$Magnesium~fc3$Class,horizontal = TRUE)
-boxplot(fc3$`Total phenols`~fc3$Class,horizontal = TRUE)
-boxplot(fc3$Flavanoids~fc3$Class,horizontal = TRUE)
-boxplot(fc3$`Nonflavanoid phenols`~fc3$Class,horizontal = TRUE)
+boxplot(fc3$Alcohol~fc3$Class,horizontal = TRUE,xlab = "Alcohol",ylab="Vino clase 3",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc3$`Malic acid`~fc3$Class,horizontal = TRUE,xlab = "Ácido Málico",ylab="Vino clase 3",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc3$Ash~fc3$Class,horizontal = TRUE,xlab = "Cenizas",ylab="Vino clase 3",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc3$`Alcalinity of ash`~fc3$Class,horizontal = TRUE,xlab = "Alcalinidad de cenizas",ylab="Vino clase 3",main="Diagrama de cajas",col=c("blue"))
+boxplot(fc3$Magnesium~fc3$Class,horizontal = TRUE,xlab = "Magnesio",ylab="Vino clase 3",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc3$`Total phenols`~fc3$Class,horizontal = TRUE,xlab = "Fenoles totales",ylab="Vino clase 3",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc3$Flavanoids~fc3$Class,horizontal = TRUE,xlab = "Flavonoides",ylab="Vino clase 3",main="Diagrama de cajas",col=c("gold"))
+boxplot(fc3$`Nonflavanoid phenols`~fc3$Class,horizontal = TRUE,xlab = "Fenoles no flavonoides",ylab="Vino clase 3",main="Diagrama de cajas",col=c("gold"))
 
 
 #MEDIDAS ESTADISTICAS (CADA VARIABLE CUANTITATIVA)
