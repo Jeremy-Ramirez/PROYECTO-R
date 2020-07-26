@@ -67,7 +67,7 @@ hist(fc3$Proline)
 #DIAGRAMA DE CAJAS FILTRADAS CON CLASE 1
 
 
-boxplot(fc1$Alcohol~fc1$Class,horizontal = TRUE)
+boxplot(fc1$Alcohol~fc1$Class,horizontal = TRUE,xlab = "Alcohol",ylab="Vino clase 1",main="Diagrama de cajas",col=c(123))
 boxplot(fc1$`Malic acid`~fc1$Class,horizontal = TRUE)
 boxplot(fc1$Ash~fc1$Class,horizontal = TRUE)
 boxplot(fc1$`Alcalinity of ash`~fc1$Class,horizontal = TRUE)
