@@ -13,13 +13,13 @@ data
 library(dplyr)
 library(datasets)
 
-data %>% filter(data$Class==1)
+fc1=data %>% filter(data$Class==1)
 
 
-data %>% filter(data$Class==2)
+fc2=data %>% filter(data$Class==2)
 
 
-data %>% filter(data$Class==3)
+fc3=data %>% filter(data$Class==3)
 
 
 
