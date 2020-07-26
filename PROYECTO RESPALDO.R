@@ -201,24 +201,23 @@ round(fc3.cor,digits=2)
 
 
 #MATRIZ DE GRAFICO DE DISPERSION VINO CLASE 1
-plot(fc1[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
-#plot(fc1[,c(1,2,3,4)])
+plot(fc1[,c(1,2,3,4,5,6,7,8)])
 
 #MATRIZ DE GRAFICO DE DISEPERSION VINO CLASE 2
-plot(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+plot(fc2[,c(1,2,3,4,5,6,7,8)])
 
 #MATRIZ DE GRAFICO DE DISPERSION VINO CLASE 3
-plot(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+plot(fc3[,c(1,2,3,4,5,6,7,8)])
 
 
 #MATRIZ DE VARIANZA Y CORRELACION VINO CLASE 1
-cov(fc1[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+cov(fc1[,c(1,2,3,4,5,6,7,8)])
 
 #MATRIZ DE VARIANZA Y CORRELACION VINO CLASE 2
-cov(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+cov(fc2[,c(1,2,3,4,5,6,7,8)])
 
 ##MATRIZ DE VARIANZA Y CORRELACION VINO CLASE 3
-cov(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+cov(fc3[,c(1,2,3,4,5,6,7,8)])
 
 
 
