@@ -266,3 +266,18 @@ fc3.cor<-cor(fc3,method="pearson")
 round(fc3.cor,digits=2)
 
 
+#matriz de grafico de dispersion vino clase 1
+
+plot(fc1[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+#plot(fc1[,c(1,2,3,4)])
+
+
+#matriz de grafico de dispersion vino clase 2
+
+plot(fc2[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+#matriz de grafico de dispersion vino clase 3
+
+plot(fc3[,c(1,2,3,4,5,6,7,8,9,10,11,12,13)])
+
+
