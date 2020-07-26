@@ -65,6 +65,8 @@ hist(fc3$Proline)
 
 #DIAGRAMA DE CAJAS (CADA VARIABLE CUANTITATIVA VS VARIABLE CUALITATIVA)
 #DIAGRAMA DE CAJAS FILTRADAS CON CLASE 1
+
+
 boxplot(fc1$Alcohol~fc1$Class,horizontal = TRUE)
 boxplot(fc1$`Malic acid`~fc1$Class,horizontal = TRUE)
 boxplot(fc1$Ash~fc1$Class,horizontal = TRUE)
@@ -250,9 +252,6 @@ library(ggplot2)
 #fc1$Class=NULL
 fc1.cor<-cor(fc1,method="pearson")
 round(fc1.cor,digits=2)
-
-
-
 corrplot(fc1.cor)
 #matriz correlacion vino clase 2
 #fc2$Class=NULL
